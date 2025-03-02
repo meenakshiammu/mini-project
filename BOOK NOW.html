@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </body>
+</html>
+<style>
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fef3f3, #ffe4f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Form Container */
+form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+/* Decorative Elements */
+form::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  background: #ffdae9;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+form::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: #ffd8e2;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Form Title */
+h1 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff69b4;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  padding: 12px;
+  border: 2px solid #ffd1e7;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+  outline: none;
+}
+
+/* Gender Radio Buttons */
+.radio-group {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.radio-group label {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Phone Number Field */
+input[type="tel"] {
+  background: #fffafc;
+  font-size: 14px;
+  border: 2px solid #ffcfe6;
+}
+
+/* Submit Button */
+button {
+  grid-column: span 2;
+  padding: 12px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+button:hover {
+  background-color: #ff85c3;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+      grid-template-columns: 1fr;
+  }
+
+  button {
+      grid-column: span 1;
+  }
+}
+</style>

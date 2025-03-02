@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-House Restaurant Menu</title>
+    <style>
+        /* Basic Styling */
+       /* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+.navbar {
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+.navbar a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+.hero-section {
+    margin-top: 50px;
+    text-align: center;
+    padding: 80px 20px;
+    background: url('restaurant-background.jpg') no-repeat center center/cover;
+    color: #333;
+}
+.hero-section h1 {
+    font-size: 3em;
+    color: #333;
+}
+.section {
+    padding: 40px;
+    text-align: center;
+}
+.section h2 {
+    font-size: 2em;
+    color: #333;
+}
+.menu-items {
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center align items */
+    gap: 20px; /* Add space between items */
+}
+.menu-item {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.5;
+    max-width: 300px; /* Ensure images and text fit well */
+    text-align: center;
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#italian">Italian</a>
+        <a href="#japanese">Japanese</a>
+        <a href="#mexican">Mexican</a>
+        <a href="#indian">Indian</a>
+        <a href="#chinese">Chinese</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Welcome to [Infiniti-Stay-Hub]</h1>
+        <p>Indulge in an exceptional dining experience</p>
+    </div>
+
+    <!-- Italian Cuisine Section -->
+    <div id="italian" class="section">
+        <h2>Italy - Authentic Italian Cuisine</h2>
+        
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272092_x-removebg-preview.png" alt="Spaghetti Carbonara">
+            <strong>Spaghetti Carbonara</strong> - $14  
+            <p>Classic pasta with eggs, cheese, pancetta, and pepper.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272091_x-removebg-preview.png" alt="Margherita Pizza">
+            <strong>Margherita Pizza</strong> - $12  
+            <p>Thin-crust pizza topped with tomatoes, mozzarella, and basil.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272090_x-removebg-preview.png" alt="Lasagna">
+            <strong>Lasagna</strong> - $16  
+            <p>Layered pasta with beef, béchamel sauce, and cheese.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272089_x-removebg-preview.png" alt="Fettuccine Alfredo">
+            <strong>Fettuccine Alfredo</strong> - $13  
+            <p>Creamy sauce with Parmesan cheese over fettuccine pasta.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272088_x-removebg-preview.png" alt="Risotto alla Milanese">
+            <strong>Risotto alla Milanese</strong> - $18  
+            <p>Golden saffron-flavored risotto from Milan.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272087_w-removebg-preview.png" alt="Ossobuco">
+            <strong>Ossobuco</strong> - $22  
+            <p>Braised veal shanks with vegetables and wine.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272086_x-removebg-preview.png" alt="Caprese Salad">
+            <strong>Caprese Salad</strong> - $10  
+            <p>Fresh tomatoes, mozzarella, and basil drizzled with olive oil.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272085_x-removebg-preview.png" alt="Gnocchi">
+            <strong>Gnocchi</strong> - $12  
+            <p>Potato dumplings served with marinara or pesto sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272084_x-removebg-preview.png" alt="Bruschetta">
+            <strong>Bruschetta</strong> - $8  
+            <p>Grilled bread topped with tomatoes, garlic, and basil.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272083_x-removebg-preview.png" alt="Tiramisu">
+            <strong>Tiramisu</strong> - $7  
+            <p>Espresso-soaked ladyfingers layered with mascarpone cream.</p>
+        </div>
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272082_x-removebg-preview.png" alt="Panna Cotta">
+            <strong>Panna Cotta</strong> - $6  
+            <p>Vanilla cream dessert topped with berry sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272081_x-removebg-preview.png" alt="Gelato">
+            <strong>Gelato</strong> - $5  
+            <p>Traditional Italian ice cream in a variety of flavors.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272080_x-removebg-preview.png" alt="Minestrone Soup">
+            <strong>Minestrone Soup</strong> - $8  
+            <p>Hearty vegetable soup with beans and pasta.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272079_x-removebg-preview.png" alt="Spaghetti Bolognese">
+            <strong>Spaghetti Bolognese</strong> - $14  
+            <p>Spaghetti with a rich, slow-cooked meat sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272078_x-removebg-preview.png" alt="Arancini">
+            <strong>Arancini</strong> - $9  
+            <p>Golden-fried risotto balls with cheese and meat filling.</p>
+        </div>
+    </div>
+
+    <!-- Japanese Cuisine Section -->
+    <div id="japanese" class="section">
+        <h2>Japan - Authentic Japanese Cuisine</h2>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272077_x-removebg-preview.png" alt="Sushi Platter">
+            <strong>Sushi Platter</strong> - $18  
+            <p>Assorted fresh sushi, including tuna, salmon, and shrimp.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272076_y-removebg-preview.png" alt="Ramen">
+            <strong>Ramen</strong> - $13  
+            <p>Rich broth with noodles, pork, egg, and vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272075_y-removebg-preview.png" alt="Tempura">
+            <strong>Tempura</strong> - $12  
+            <p>Lightly battered and fried shrimp and vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272074_x-removebg-preview.png" alt="Yakitori">
+            <strong>Yakitori</strong> - $9  
+            <p>Grilled chicken skewers seasoned with a savory sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272073_x-removebg-preview.png" alt="Tonkatsu">
+            <strong>Tonkatsu</strong> - $15  
+            <p>Crispy breaded pork cutlet served with shredded cabbage.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272072_w-removebg-preview.png" alt="Okonomiyaki">
+            <strong>Okonomiyaki</strong> - $11  
+            <p>Savory pancake with cabbage, seafood, and special sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272071_x-removebg-preview.png" alt="Udon">
+            <strong>Udon</strong> - $10  
+            <p>Thick wheat noodles in a savory broth with green onions.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272070_x-removebg-preview.png" alt="Sashimi">
+            <strong>Sashimi</strong> - $20  
+            <p>Thinly sliced raw fish served with wasabi and soy sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272069_x-removebg-preview.png" alt="Miso Soup">
+            <strong>Miso Soup</strong> - $4  
+            <p>Traditional Japanese soup with tofu, seaweed, and scallions.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272068_x-removebg-preview.png" alt="Gyoza">
+            <strong>Gyoza</strong> - $8  
+            <p>Japanese dumplings filled with pork and vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272067_x-removebg-preview.png" alt="Teriyaki Chicken">
+            <strong>Teriyaki Chicken</strong> - $14  
+            <p>Grilled chicken glazed with a sweet teriyaki sauce.</p>
+        </div>
+<div class="menu-item">
+            <img src="Images\photo_6161377349619272066_x-removebg-preview.png" alt="Kaiseki">
+            <strong>Kaiseki</strong> - $30  
+            <p>Traditional multi-course Japanese dinner with seasonal dishes.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272065_x-removebg-preview.png" alt="Onigiri">
+            <strong>Onigiri</strong> - $5  
+            <p>Rice balls with various fillings, wrapped in seaweed.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272064_x-removebg-preview.png" alt="Mochi">
+            <strong>Mochi</strong> - $6  
+            <p>Sweet rice cake with a chewy texture, often filled with red bean paste.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272061_x__1_-removebg-preview.png" alt="Green Tea Ice Cream">
+            <strong>Green Tea Ice Cream</strong> - $5  
+            <p>Creamy Japanese ice cream flavored with matcha green tea.</p>
+        </div>
+
+    </div>
+
+    <!-- Mexican Cuisine Section -->
+    <div id="mexican" class="section">
+        <h2>Mexico - Authentic Mexican Cuisine</h2>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272063_y-removebg-preview.png" alt="Tacos">
+            <strong>Tacos</strong> - $8  
+            <p>Soft corn tortillas filled with meat, topped with onions, cilantro, and salsa.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272062_w-removebg-preview.png" alt="Enchiladas">
+            <strong>Enchiladas</strong> - $10  
+            <p>Tortillas rolled with meat or cheese, covered in a rich chili sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272061_x-removebg-preview.png" alt="Guacamole">
+            <strong>Guacamole</strong> - $6  
+            <p>Fresh avocado dip with lime, onion, tomato, and cilantro.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272060_x-removebg-preview.png" alt="Quesadillas">
+            <strong>Quesadillas</strong> - $7  
+            <p>Grilled tortillas filled with melted cheese and choice of meat or vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272059_x-removebg-preview.png" alt="Tamales">
+            <strong>Tamales</strong> - $8  
+            <p>Corn masa dough filled with meat, wrapped in corn husks and steamed.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272058_x-removebg-preview.png" alt="Chiles Rellenos">
+            <strong>Chiles Rellenos</strong> - $12  
+            <p>Poblano peppers stuffed with cheese, battered, and fried.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272057_x-removebg-preview.png" alt="Pozole">
+            <strong>Pozole</strong> - $10  
+            <p>Traditional soup with hominy, pork, and spices, garnished with lettuce and radishes.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272056_x-removebg-preview.png" alt="Sopa de Tortilla">
+            <strong>Sopa de Tortilla</strong> - $7  
+            <p>Hearty soup with crispy tortilla strips, avocado, and cheese in a tomato base.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272055_x-removebg-preview.png" alt="Fajitas">
+            <strong>Fajitas</strong> - $15  
+            <p>Grilled strips of meat served with sautéed onions, bell peppers, and tortillas.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272054_x-removebg-preview.png" alt="Ceviche">
+            <strong>Ceviche</strong> - $12  
+            <p>Fresh fish marinated in lime juice with onions, cilantro, and tomatoes.</p>
+        </div>
+<div class="menu-item">
+            <img src="Images\photo_6161377349619272053_x-removebg-preview.png" alt="Mole Poblano">
+            <strong>Mole Poblano</strong> - $14  
+            <p>Chicken smothered in a rich, chocolate-infused chili sauce.</p>
+        </div>
+    </div>
+
+    <!-- Indian Cuisine Section -->
+    <div id="indian" class="section">
+        <h2>India - Authentic Indian Cuisine</h2>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272052_x-removebg-preview.png" alt="Butter Chicken">
+            <strong>Butter Chicken</strong> - $12  
+            <p>Chicken cooked in a creamy tomato-based gravy with spices.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272051_m-removebg-preview.png" alt="Biryani">
+            <strong>Biryani</strong> - $10  
+            <p>Fragrant basmati rice cooked with marinated meat, spices, and herbs.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272050_m-removebg-preview.png" alt="Paneer Tikka">
+            <strong>Paneer Tikka</strong> - $8  
+            <p>Spicy grilled cubes of cottage cheese, marinated in yogurt and spices.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272049_x-removebg-preview.png" alt="Samosa">
+            <strong>Samosa</strong> - $3  
+            <p>Deep-fried pastry stuffed with spiced potatoes and peas.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272048_x-removebg-preview.png" alt="Naan">
+            <strong>Naan</strong> - $2  
+            <p>Soft, leavened flatbread baked in a tandoor.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272047_x-removebg-preview.png" alt="Dal Makhani">
+            <strong>Dal Makhani</strong> - $9  
+            <p>Rich, creamy black lentils cooked with butter and spices.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272046_x-removebg-preview.png" alt="Tandoori Chicken">
+            <strong>Tandoori Chicken</strong> - $12  
+            <p>Chicken marinated in yogurt and spices, grilled in a clay oven.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272045_y-removebg-preview.png" alt="Chole">
+            <strong>Chole</strong> - $7  
+            <p>Spicy chickpea curry, often served with rice or flatbread.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272044_x-removebg-preview.png" alt="Masala Dosa">
+            <strong>Masala Dosa</strong> - $6  
+            <p>Thin, crispy rice crepe filled with spiced potato mash.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272043_m-removebg-preview.png" alt="Rogan Josh">
+            <strong>Rogan Josh</strong> - $14  
+            <p>Flavorful lamb curry with a thick, spicy gravy.</p>
+        </div>
+<div class="menu-item">
+            <img src="Images\photo_6161377349619272042_x-removebg-preview.png" alt="Palak Paneer">
+            <strong>Palak Paneer</strong> - $10  
+            <p>Spinach puree cooked with paneer (cottage cheese) and spices.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272041_x-removebg-preview.png" alt="Kachori">
+            <strong>Kachori</strong> - $4  
+            <p>Deep-fried, round pastry filled with spiced lentils or peas.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272040_m-removebg-preview.png" alt="Gajar Halwa">
+            <strong>Gajar Halwa</strong> - $5  
+            <p>Sweet dessert made from grated carrots, milk, and ghee.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272039_x-removebg-preview.png" alt="Gulab Jamun">
+            <strong>Gulab Jamun</strong> - $3  
+            <p>Soft, fried dough balls soaked in sugar syrup.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272038_m-removebg-preview.png" alt="Lassi">
+            <strong>Lassi</strong> - $3  
+            <p>Refreshing yogurt drink, available in sweet or salted varieties.</p>
+        </div>
+
+    </div>
+
+    <!-- Chinese Cuisine Section -->
+    <div id="chinese" class="section">
+        <h2>China - Classic Chinese Cuisine</h2>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272037_x-removebg-preview.png" alt="Kung Pao Chicken">
+            <strong>Kung Pao Chicken</strong> - $12  
+            <p>Stir-fried chicken with peanuts, chili peppers, and vegetables in a savory sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272036_x-removebg-preview.png" alt="Sweet and Sour Pork">
+            <strong>Sweet and Sour Pork</strong> - $13  
+            <p>Deep-fried pork pieces coated in a tangy sweet and sour sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272035_m-removebg-preview.png" alt="Dumplings">
+            <strong>Dumplings</strong> - $8  
+            <p>Steamed dumplings filled with minced pork, vegetables, and seasonings.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272034_x-removebg-preview.png" alt="Fried Rice">
+            <strong>Fried Rice</strong> - $9  
+            <p>Stir-fried rice with eggs, vegetables, and your choice of meat or tofu.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272033_x-removebg-preview.png" alt="Peking Duck">
+            <strong>Peking Duck</strong> - $22  
+            <p>Whole duck roasted until crispy, served with pancakes, hoisin sauce, and vegetables.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272032_x-removebg-preview.png" alt="Mapo Tofu">
+            <strong>Mapo Tofu</strong> - $11  
+            <p>Soft tofu cooked in a spicy, flavorful sauce with minced meat and Sichuan peppercorns.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272031_x-removebg-preview.png" alt="Chow Mein">
+            <strong>Chow Mein</strong> - $10  
+            <p>Stir-fried noodles with vegetables, meat, and soy sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272030_x-removebg-preview.png" alt="Wonton Soup">
+            <strong>Wonton Soup</strong> - $7  
+            <p>Clear broth with stuffed wontons, vegetables, and herbs.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272029_x-removebg-preview.png" alt="Egg Foo Yung">
+            <strong>Egg Foo Yung</strong> - $9  
+            <p>Chinese-style omelet filled with vegetables, meat, and gravy.</p>
+        </div>
+<div class="menu-item">
+            <img src="Images\photo_6161377349619272028_x-removebg-preview.png" alt="Hot and Sour Soup">
+            <strong>Hot and Sour Soup</strong> - $6  
+            <p>Spicy and tangy soup made with mushrooms, bamboo shoots, and tofu.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272027_x-removebg-preview.png" alt="Char Siu">
+            <strong>Char Siu</strong> - $14  
+            <p>Chinese-style barbecued pork served with rice or noodles.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272026_x-removebg-preview.png" alt="Chinese BBQ Ribs">
+            <strong>Chinese BBQ Ribs</strong> - $16  
+            <p>Tender ribs glazed with a sweet and savory barbecue sauce.</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Images\photo_6161377349619272025_x-removebg-preview.png" alt="Eggplant in Garlic Sauce">
+            <strong>Eggplant in Garlic Sauce</strong> - $10  
+            <p>Stir-fried eggplant in a tangy garlic sauce with vegetables and tofu.</p>
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>For reservations,room services and inquiries, call us at (555) 123-4567 or visit our front desk.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; [2024] [Infiniti-Stay-Hub]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

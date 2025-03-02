@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Fitness Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .fitness-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .fitness-section h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .fitness-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .fitness-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .fitness-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .fitness-item img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .fitness-item h3 {
+            margin: 15px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .fitness-item p {
+            color: #666;
+            font-size: 16px;
+            margin: 0 0 10px;
+        }
+        .fitness-item .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .enroll-button {
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .enroll-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="fitness-section">
+    <h1>Fitness Center</h1>
+    <p>Stay fit and healthy during your stay with our state-of-the-art fitness facilities and personalized services.</p>
+    
+    <div class="fitness-grid">
+
+        <!-- Gym Facility -->
+        <div class="fitness-item">
+            <img src="Images\photo_6163629149432954969_x.jpg" alt="Gym Facility">
+            <h3>Fully Equipped Gym</h3>
+            <p>Our gym is equipped with the latest machines for cardio, strength training, and more.</p>
+            <p class="price">Included for Hotel Guests</p>
+        </div>
+
+        <!-- Group Classes -->
+        <div class="fitness-item">
+            <img src="Images\photo_6163629149432954968_x.jpg" alt="Group Classes">
+            <h3>Group Classes</h3>
+            <p>Join our yoga, pilates, and high-intensity interval training (HIIT) classes.</p>
+            <p class="price">$10 per class</p>
+        </div>
+
+        <!-- Personal Training -->
+        <div class="fitness-item">
+            <img src="Images\photo_6163629149432954967_x.jpg" alt="Personal Training">
+            <h3>Personal Training</h3>
+            <p>Get one-on-one sessions with our certified personal trainers.</p>
+            <p class="price">$50 per session</p>
+        </div>
+
+        <!-- Swimming Pool -->
+        <div class="fitness-item">
+            <img src="Images\photo_6163629149432954966_x.jpg" alt="Swimming Pool">
+            <h3>Swimming Pool</h3>
+            <p>Enjoy a relaxing swim in our heated indoor pool.</p>
+            <p class="price">Included for Hotel Guests</p>
+        </div>
+
+        <!-- Nutrition Consultation -->
+        <div class="fitness-item">
+            <img src="Images\photo_6163629149432954965_x.jpg" alt="Nutrition Consultation">
+            <h3>Nutrition Consultation</h3>
+            <p>Get personalized nutrition advice from our certified dietitians.</p>
+            <p class="price">$30 per session</p>
+        </div>
+
+    </div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; [2024] [Infiniti-Stay-Hub]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

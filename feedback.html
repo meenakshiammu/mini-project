@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Feedback</title>
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .feedback-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .feedback-form {
+            display: none; /* Initially hidden */
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .feedback-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .feedback-form input, .feedback-form textarea, .feedback-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Feedback Button -->
+<button class="feedback-button" onclick="toggleFeedbackForm()">Give Feedback</button>
+
+<!-- Feedback Form -->
+<div class="feedback-form" id="feedbackForm">
+    <h2>Customer Feedback</h2>
+    <form action="connect1.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="rating">Rate Your Stay:</label>
+        <select id="rating" name="rating" required>
+            <option value="">Select Rating</option>
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Fair</option>
+            <option value="1">Poor</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your feedback..." required></textarea>
+
+        <button type="submit" class="submit-button">Submit Feedback</button>
+    </form>
+</div>
+
+<script>
+    // JavaScript to toggle feedback form visibility
+    function toggleFeedbackForm() {
+        var form = document.getElementById("feedbackForm");
+        if (form.style.display === "none" || form.style.display === "") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
